@@ -29,16 +29,15 @@
 
 
 --font-family: 'Poppins', sans-serif;
---font-text-lg: 700 2rem/1.5 var(--font-family);
---font-text-md: 600 1.5rem/1.5 var(--font-family);
---font-text-sm: 700 1.25rem/1.5 var(--font-family);
---font-text: 700 1rem/1.5 var(--font-family);
+
+--text: 400 1rem/1.5 var(--font-family);
+--text-sm: 400 0.875rem/1.4 var(--font-family);
 }
 
 body {
     overflow: hidden;
 
-    font: var(--font-text);
+    font: var(--text);
     color: var(--text-secondary);
 }
 
@@ -48,4 +47,5 @@ h1, h2 {
 
 img {
     max-width: 100%;
+    height: auto;
 }
