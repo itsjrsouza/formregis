@@ -10,6 +10,17 @@
 
 <body>
     <div id="app">
+        <header class="mobile-only">
+            <div class="logo-ilus">
+                <div class="logo">
+                    <img class="logo" src="./assets/logo.svg" alt="">
+                </div>
+                <div class="ilus">
+                    <img class="ilus" src="./assets/Illustration.svg" alt="">
+                </div>
+            </div>
+        </header>
+        
         <main>
             <div class="main-container">
                 <div class="back">
@@ -82,7 +93,7 @@
                         <div class="input-wrapper flex-2">
                             <label for="street">Rua</label>
                             <input type="text" id="street" name="street"
-                            value="Rua das Flores" disabled
+                            placeholder="Rua das Flores"
                             >
                         </div>
                     </div>
@@ -98,7 +109,7 @@
                         <div class="input-wrapper flex-2">
                             <label for="city">Cidade</label>
                             <input type="text" id="city" name="city"
-                            value="São Paulo" disabled
+                            placeholder="São Paulo"
                             >
                         </div>
                     </div>
@@ -107,7 +118,7 @@
                         <div class="input-wrapper flex-1">
                             <label for="state">Estado</label>
                             <input type="text" id="state" name="state"
-                            value="SP" disabled
+                            placeholder="SP" 
                             >
                         </div>
                     </div>
@@ -130,7 +141,7 @@
 
                     <div class="input-wrapper">
                         <label for="mail">E-mail</label>
-                        <input type="mail" id="mail" name="mail" required>
+                        <input type="email" id="mail" name="mail" required>
 
                         <div class="error">
                             <img src="./assets/icons/alert-circle.svg" alt="ícone de alerta">
@@ -193,7 +204,7 @@
                                 <div class="radio-image"></div>
                                 <input type="radio" name="sport" id="yoga">
                                 <img src="./assets/icons/yoga-02.svg" alt="ícone de yoga">
-                                <label for="yoga">Futebol</label>
+                                <label for="yoga">Yoga</label>
                             </div>
 
                             <div class="radio-inner">
@@ -232,7 +243,7 @@
                         Salvar respostas
                     </button>
 
-                    <button class="btn-primary" type="submit">
+                    <button type="submit" class="btn-primary" type="submit">
                         Fazer matrícula
                     </button>
                 </div>
@@ -240,7 +251,7 @@
             </div>
         </main>
 
-        <aside>
+        <aside class="desktop-only">
             <div class="aside-container">
                 <header>
                     <img src="./assets/logo.svg" alt="logo">
@@ -253,5 +264,6 @@
         </aside>
     </div>
     
+    <script src="script.js"></script>
 </body>
 </html>
